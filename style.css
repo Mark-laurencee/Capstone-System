@@ -1,0 +1,474 @@
+/* Reset some default styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+}
+
+.nav-bar {
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    color: maroon;
+    font-size: 15px;
+    gap: 10px;
+}
+
+#logo img {
+    width: 90px;
+    height: 90px;
+    border-radius: 80px;
+}
+
+.nav-link a {
+    text-decoration: none;
+    color: maroon;
+    margin-right: 25px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#login a {
+    text-decoration: none;
+    margin-right: 25px;
+    font-weight: bold;
+}
+
+.register-link {
+    color: maroon;
+    font-size: 15px;
+}
+
+.btn-login {
+    border: 2px;
+    border-radius: 40px;
+    background-color: maroon;
+    padding: 10px 40px;
+    color: white;
+    font-size: 15px;
+}
+
+/* Grid layout for content */
+.content-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns for h1 and images */
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px;
+    margin-left: 100px;
+}
+
+/* Styling for text */
+.text-content {
+    max-width: 100%;
+    margin-left: 50px;
+}
+
+.text-content h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.text-content p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+
+.get-started-btn {
+    padding: 15px 40px;
+    background-color: maroon;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.get-started-btn:hover {
+    background-color: darkred;
+}
+
+
+.image-content img {
+    max-width: 800px;
+    height: auto;
+    border-radius: 20px;
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+    .content-container {
+        grid-template-columns: 1fr; 
+        text-align: center;
+    }
+
+    .image-content img {
+        margin: 0 auto;
+        max-width: 300px;
+    }
+}
+
+.content-container2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px;
+}
+
+.text-content2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 50px;
+}
+
+.text-content h3 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.text-content p {
+    font-size: 1.2em;
+    
+}
+
+/* Grid Layout for content2  */
+.content2-container {
+    padding: 50px;
+    text-align: center;
+    background-color: #e2dfdf;
+}
+
+.text-content2 h3 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.text-content2 p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+/*Features Style*/
+.features-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+    object-fit: cover;
+}
+
+.feature-card {
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(219, 47, 47, 0.74);
+    background-color: white;
+}
+
+.feature-card img {
+    max-width: 150px;
+    margin-bottom: 15px;
+}
+
+.feature-card h4 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: maroon;
+}
+
+.feature-card p {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.visit-btn {
+    padding: 10px 40px;
+    background-color: maroon;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.partners-section {
+    padding: 50px;
+    text-align: center;
+    margin-top: 70px;
+}
+
+.partner-logos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Wraps logos to a new line if the screen is too narrow */
+    margin-top: 20px;
+}
+
+.partner-logos img {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    object-fit: cover;
+    border: 1px solid;
+    border-radius: 100px;
+
+}
+
+.content3-container {  
+
+}
+
+.content3-container h2 {
+    margin-top: 200px;
+    margin-left: 100px;
+
+}
+
+/* Testimonials Section */
+.testimonials {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin: 50px 100px;
+}
+
+.testimonial {
+    text-align: center;
+    width: 250px;
+}
+
+.testimonial img {
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.testimonial h4 {
+    font-size: 1.2em;
+    color: maroon;
+    margin: 10px 0;
+}
+
+.testimonial p {
+    font-size: 1em;
+    color: black;
+}
+
+/* Large Feedback Box */
+.feedback-box {
+    margin: 50px auto;
+    padding: 20px;
+    max-width: 800px;
+    border: 2px solid maroon;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.feedback-box h3 {
+    font-size: 1.8em;
+    color: maroon;
+    margin-bottom: 20px;
+}
+
+.feedback-list {
+    max-height: 400px;
+    overflow-y: auto;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+.feedback-list p {
+    font-size: 1em;
+    color: #333;
+    margin: 10px 0;
+}
+
+.reviews {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 50px 100px;
+}
+
+.review1 img {
+    width: 200px;
+    height: 200px;
+    border-radius: 150px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.review1 {
+    margin: 50px auto;
+    padding: 20px;
+    max-width: 800px;
+    border: 2px solid maroon;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    text-align: center;
+    
+}
+
+.review2 {
+    margin: 50px auto;
+    padding: 20px;
+    max-width: 800px;
+    border: 2px solid maroon;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.review2 img {
+    width: 200px;
+    height: 200px;
+    border-radius: 150px;
+    object-fit: cover;
+    margin-bottom: 15px;
+    
+}
+
+.review1 h3 {
+color: maroon;
+    margin: 10px;
+}
+
+.review2 h3 {
+color: maroon;
+    margin: 10px;
+}
+
+.star {
+    color: rgba(240, 240, 16, 0.747);
+}
+
+.footer {
+    background-color: #f8f8f8;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.about, .subscribe, .footer-links {
+    flex: 1;
+    text-align: center;
+    margin: 10px;
+}
+
+.footer-logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    margin-bottom: 10px;
+}
+
+.about h2 {
+    color: #800000;
+    margin: 10px 0;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.subscribe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 120px;
+}
+
+.subscribe label {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.subscribe input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.subscribe button {
+    padding: 5px 10px;
+    background-color: #800000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.subscribe button:hover {
+    background-color: #900000;
+}
+
+.footer-link {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.footer-links a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-links a:hover {
+    color: #800000;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+}
+
+.footer-bottom p {
+    color: #800000;
+    font-size: 14px;
+}
